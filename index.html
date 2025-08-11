@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azzle Service & HTML Temaptle</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!--- End favicon-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/remixicon.css">
+  <link rel="stylesheet" href="assets/css/clash-grotesk.css">
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="preloader-inner">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- End preloader -->
+
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+
+  <!-- progress circle -->
+  <div class="paginacontainer">
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+      <div class="top-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
+          <path d="M14.4847 1C14.4847 1 14.875 5.5 18.9847 7.9C20.8665 8.99899 23.4847 10 23.4847 10M23.4847 10H1M23.4847 10C23.4847 10 20.9004 11.0612 18.9847 12.1C14.4847 14.54 14.4847 19 14.4847 19" stroke="rgba(254, 51, 10, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- End All Js -->
+
+
+
+  <!-- Mobile Menu -->
+  <div class="azzle-menu-wrapper">
+    <div class="azzle-menu-area text-center">
+      <div class="azzle-menu-mobile-top">
+        <div class="mobile-logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo-dark.svg" alt="logo">
+          </a>
+        </div>
+        <button class="azzle-menu-toggle mobile">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="azzle-mobile-menu">
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="#">Homepage</a>
+            <ul class="sub-menu">
+              <li><a href="index.html">Home 01</a></li>
+              <li><a href="index-02.html">Home 02</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li class="menu-item-has-children">
+                <a class="no-border" href="#">Service</a>
+                <ul class="sub-menu">
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="single-service.html">Service Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a class="no-border" href="#">Career</a>
+                <ul class="sub-menu">
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="single-career.html">Career Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a class="no-border" href="#">Portfolio</a>
+                <ul class="sub-menu">
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                </ul>
+              </li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="faq.html">Faq</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="404.html">Errors 404</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a class="no-border" href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="single-blog.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="azzle-mobile-menu-btn">
+        <a class="azzle-default-btn sm-size" href="contact-us.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <!-- End mobile menu -->
+
+
+  <header class="site-header azzle-header-section" id="sticky-menu">
+    <div class="container">
+      <div class="row gx-3 align-items-center justify-content-between">
+        <div class="col-8 col-sm-auto ">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="assets/images/logo/logo-dark.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="azzle-main-menu-item">
+            <nav class="main-menu menu-style1 d-none d-lg-block menu-left">
+              <ul>
+                <li class="menu-item-has-children">
+                  <a href="#">Demos</a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Home 01</a></li>
+                    <li><a href="index-02.html">Home 02</a></li>
+                    <li><a href="index-03.html">Home 03</a></li>
+                    <li><a href="index-04.html">Home 04</a></li>
+                    <li><a href="index-05.html">Home 05</a></li>
+                    <li><a href="index-06.html">Home 06</a></li>
+                  </ul>
+                </li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item-has-children">
+                      <a class="no-border" href="#">Service</a>
+                      <ul class="sub-menu">
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="single-service.html">Service Details</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a class="no-border" href="#">Blog</a>
+                  <ul class="sub-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="single-blog.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact-us.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-auto d-flex align-items-center">
+          <div class="azzle-header-button-wraper">
+            <div class="azzle-header-login-button">
+              <ul>
+                <li><a href="sign-in.html">Login</a></li>
+              </ul>
+            </div>
+            <a class="azzle-default-btn azzle-header-btn" href="contact-us.html">Sign up free</a>
+          </div>
+          <div class="azzle-header-menu">
+            <nav class="navbar site-navbar justify-content-between">
+              <!-- Brand Logo-->
+              <!-- mobile menu trigger -->
+              <button class="azzle-menu-toggle d-inline-block d-lg-none">
+                <span></span>
+              </button>
+              <!--/.Mobile Menu Hamburger Ends-->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <!-- End mobile menu -->
+
+  <div class="azzle-hero-section section" style="background-image: url(assets/images/home1/hero-bg.png);">
+    <div class="container">
+      <div class="azzle-hero-content1">
+        <h1>Simplify your SaaS solution with AI</h1>
+        <p>Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products and services and optimize inventory management and supply chain operations.</p>
+        <div class="azzle-hero-button mt-50">
+          <a href="#" class="azzle-default-btn">Get started for free</a>
+          <a href="#" class="azzle-default-btn outline-btn">Learn more</a>
+        </div>
+      </div>
+      <div class="azzle-hero-dashboard">
+        <img src="assets/images/home1/Dashboard.png" alt="Dashboard">
+      </div>
+      <div class="divider"></div>
+      <div class="azzle-brand-slider-wraper">
+        <div class="azzle-brand-slider-title">
+          <p>Companies of all sizes trust us to find AI SaaS critical to their growth and innovation</p>
+        </div>
+        <div class="azzle-brand-slider">
+          <div class="azzle-logo-icon-item">
+            <img src="assets/images/home1/icon1.svg" alt="">
+          </div>
+          <div class="azzle-logo-icon-item">
+            <img src="assets/images/home1/icon2.svg" alt="">
+          </div>
+          <div class="azzle-logo-icon-item">
+            <img src="assets/images/home1/icon3.svg" alt="">
+          </div>
+          <div class="azzle-logo-icon-item">
+            <img src="assets/images/home1/icon4.svg" alt="">
+          </div>
+          <div class="azzle-logo-icon-item">
+            <img src="assets/images/home1/icon5.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end hero -->
+
+  <section class="azzle-section-padding">
+    <div class="container">
+      <div class="azzle-section-title max-width-750">
+        <h2>Core features that make it valuable</h2>
+      </div>
+      <div class="azzle-iconbox-wraper">
+        <div class="azzle-iconbox-wrap wrap1">
+          <div class="azzle-iconbox-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35 8.70058L23.3333 0V23.3333H0L8.70058 35L1.01993e-06 46.6665H23.3333V23.3333H46.6665V0L35 8.70058ZM61.2994 35L70 23.3334H46.6665V46.6665H23.3333V70L35 61.2994L46.6665 70V46.6665H70L61.2994 35Z" fill="black" />
+            </svg>
+          </div>
+          <div class="azzle-iconbox-content">
+            <h4>Resource Flexibility</h4>
+            <p>AI SaaS solutions are designed to be scalable, allowing users to adjust their needs.</p>
+          </div>
+          <div class="azzle-iconbox-button mt-50">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <path d="M15.5 2.25L24.25 11M24.25 11L15.5 19.75M24.25 11L1.75 11" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="azzle-iconbox-wrap">
+          <div class="azzle-iconbox-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 55.4417C16.155 50.3359 19.6652 53.8457 14.5591 70C23.9937 53.8457 46.0065 53.8457 55.441 70C50.3384 53.8457 53.8489 50.3359 70 55.4417C53.8489 46.0075 53.8489 23.9961 70 14.5621C53.8489 19.6641 50.3384 16.1541 55.441 0C46.0065 16.1541 23.9937 16.1541 14.5591 0C19.6652 16.1541 16.155 19.6641 0 14.5621C16.155 23.9961 16.155 46.0075 0 55.4417ZM35 47.95C42.1522 47.95 47.95 42.1522 47.95 35C47.95 27.8479 42.1522 22.05 35 22.05C27.8479 22.05 22.05 27.8479 22.05 35C22.05 42.1522 27.8479 47.95 35 47.95Z" fill="black" />
+            </svg>
+          </div>
+          <div class="azzle-iconbox-content">
+            <h4>Managed Services</h4>
+            <p>Providers typically handle the maintenance also patching of the infrastructure.</p>
+          </div>
+          <div class="azzle-iconbox-button mt-50">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <path d="M15.5 2.25L24.25 11M24.25 11L15.5 19.75M24.25 11L1.75 11" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="azzle-iconbox-wrap">
+          <div class="azzle-iconbox-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <g clip-path="url(#clip0_1_4318)">
+                <path d="M54.6224 50.3776L39.2444 35L54.6224 19.6223L70 35L54.6224 50.3776ZM15.3777 50.3776L0 35L15.3777 19.6223L30.7555 35L15.3777 50.3776ZM35 70L19.6223 54.6224L35 39.2444L50.3776 54.6224L35 70ZM35 30.7555L19.6223 15.3777L35 0L50.3776 15.3777L35 30.7555Z" fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_4318">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="azzle-iconbox-content">
+            <h4>Web-Based Access</h4>
+            <p>Web browsers or APIs, making easy to use anywhere with an internet connection.</p>
+          </div>
+          <div class="azzle-iconbox-button mt-50">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <path d="M15.5 2.25L24.25 11M24.25 11L15.5 19.75M24.25 11L1.75 11" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="azzle-iconbox-wrap wrap2">
+          <div class="azzle-iconbox-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5299 51.7242C20.0703 50.7306 19.2695 49.9298 18.2757 49.4699C10.5407 45.8923 4.42168 40.733 1.15547 37.639C-0.385161 36.1796 -0.385154 33.8204 1.15547 32.3609C4.42168 29.2668 10.5407 24.1076 18.2757 20.53C19.2695 20.0703 20.0703 19.2695 20.5299 18.2757C24.1076 10.5407 29.2668 4.42168 32.3609 1.15547C33.8204 -0.385159 36.1796 -0.385155 37.639 1.15547C40.733 4.42168 45.8923 10.5407 49.4699 18.2757C49.9298 19.2695 50.7306 20.0703 51.7242 20.5299C59.4594 24.1076 65.5784 29.2668 68.8445 32.3609C70.3852 33.8204 70.3852 36.1796 68.8445 37.639C65.5784 40.733 59.4594 45.8923 51.7242 49.4699C50.7306 49.9298 49.9298 50.7306 49.4699 51.7242C45.8923 59.4594 40.733 65.5784 37.639 68.8445C36.1796 70.3852 33.8204 70.3852 32.3609 68.8445C29.2668 65.5784 24.1076 59.4594 20.5299 51.7242ZM35.0001 47.8655C42.1053 47.8655 47.8655 42.1053 47.8655 35.0001C47.8655 27.8946 42.1053 22.1345 35.0001 22.1345C27.8946 22.1345 22.1346 27.8946 22.1346 35.0001C22.1346 42.1053 27.8946 47.8655 35.0001 47.8655Z" fill="black" />
+            </svg>
+          </div>
+          <div class="azzle-iconbox-content">
+            <h4>Friendly Interfaces</h4>
+            <p>user-friendly interfaces and dashboards, making it easier for non-technical users.</p>
+          </div>
+          <div class="azzle-iconbox-button mt-50">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <path d="M15.5 2.25L24.25 11M24.25 11L15.5 19.75M24.25 11L1.75 11" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end feature -->
+
+  <div class="azzle-section-padding pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="azzle-content-thumb">
+            <img src="assets/images/home1/thumb2.png" alt="Thumb">
+          </div>
+        </div>
+        <div class="col-lg-7 d-flex align-items-center">
+          <div class="azzle-default-content pl-140">
+            <h2>Accessible to a wider audience</h2>
+            <p>Advanced AI capabilities accessible to a broader audience, including small & medium-sized businesses and individuals who may not have the resources or expertise to develop.</p>
+            <p>AI platform are typically accessible via the internet, making services available anywhere with an internet connection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end content -->
+
+  <div class="azzle-section-padding pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 order-lg-2">
+          <div class="azzle-content-thumb">
+            <img src="assets/images/home1/thumb1.png" alt="Thumb">
+          </div>
+        </div>
+        <div class="col-lg-7 d-flex align-items-center">
+          <div class="azzle-default-content pr-140">
+            <h2>Providing quick deploy solutions</h2>
+            <p class="mb-0">Our AI SaaS solutions can be quickly deployed, enabling users to start benefiting from AI capabilities without lengthy setup and development times in fast-paced industries.</p>
+            <div class="azzle-listicon-wrap mt-50">
+              <ul>
+                <li>
+                  <img src="assets/images/home1/arrow.svg" alt="Icon">
+                  <h4>Ready-to-use AI capabilities system</h4>
+                </li>
+                <li>
+                  <img src="assets/images/home1/arrow.svg" alt="Icon">
+                  <h4>Users can quickly integrate AI features</h4>
+                </li>
+                <li>
+                  <img src="assets/images/home1/arrow.svg" alt="Icon">
+                  <h4>Time savings translate to cost savings</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end content -->
+
+  <section class="azzle-video-section">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="azzle-video-thumb">
+          <img src="assets/images/home1/thumb3.png" alt="Thumb">
+          <a class="azzle-popup-video video-init" href="https://www.youtube.com/watch?v=zE_WFiHnSlY">
+            <img src="assets/images/home1/play-btn.png" alt="">
+            <div class="waves wave-1"></div>
+            <div class="waves wave-2"></div>
+            <div class="waves wave-3"></div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="azzle-video-wrap">
+          <div class="azzle-video-content pl-50">
+            <h2>AI-powered that streamline tasks</h2>
+            <p>As your business grows or your AI SaaS needs change, you can easily adjust your subscription level to match those needs. This flexibility ensures that AI remains an asset.</p>
+            <div class="divider2"></div>
+            <div class="azzle-counter-wrap">
+              <div class="azzle-counter-item">
+                <h2 class="azzle-counter-data" aria-label="92%">92%</h2>
+                <p>Customer service inquiries</p>
+              </div>
+              <div class="azzle-counter-item">
+                <h2 class="azzle-counter-data" aria-label="75%">75%</h2>
+                <p>Using financial institutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+
+  <div class="azzle-section-padding2">
+    <div class="container">
+      <div class="azzle-section-title center">
+        <h2>Cost-effectively build any software</h2>
+        <div class="azzle-title-pricing-btn mt-50">
+          <label for="toggle" class="toggle-switch">
+            <input class="toggle-button" id="toggle" type="checkbox" name="toggle" data-checked="coreAnnuallyPrice,coreAnnuallyText" data-not-checked="coreMonthlyPrice,coreMonthlyText">
+            <span>Monthly</span>
+            <span>Yearly</span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="azzle-pricing-wrap">
+            <div class="azzle-pricing-header">
+              <h4>Beginner</h4>
+              <p>Up to 10 members</p>
+            </div>
+            <div class="azzle-pricing-price proAnnuallyPrice">
+              <h2>$25</h2>
+              <span>/Per Month</span>
+            </div>
+            <div class="azzle-pricing-price proMonthlyPrice">
+              <h2>$50</h2>
+              <span>/Per Year</span>
+            </div>
+            <div class="azzle-pricing-body">
+              <p>This is an excellent option for people & small businesses who are starting out.</p>
+            </div>
+            <div class="azzle-pricing-footer mt-50">
+              <a class="azzle-default-btn d-block outline-btn" href="contact-us.html">Choose the plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="azzle-pricing-wrap active">
+            <div class="azzle-pricing-header">
+              <h4>Starter</h4>
+              <p>Up to 50 members</p>
+            </div>
+            <div class="azzle-pricing-price proAnnuallyPrice">
+              <h2>$89</h2>
+              <span>/Per Month</span>
+            </div>
+            <div class="azzle-pricing-price proMonthlyPrice">
+              <h2>$169</h2>
+              <span>/Per Year</span>
+            </div>
+            <div class="azzle-pricing-body">
+              <p>This plan is suitable for e-commerce stores as well as professional blogs.</p>
+            </div>
+            <div class="azzle-pricing-footer mt-50">
+              <a class="azzle-default-btn d-block outline-btn btn2" href="contact-us.html">Choose the plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="azzle-pricing-wrap">
+            <div class="azzle-pricing-header">
+              <h4>Pro</h4>
+              <p>Up to 100 members</p>
+            </div>
+            <div class="azzle-pricing-price proAnnuallyPrice">
+              <h2>$199</h2>
+              <span>/Per Month</span>
+            </div>
+            <div class="azzle-pricing-price proMonthlyPrice">
+              <h2>$299</h2>
+              <span>/Per Year</span>
+            </div>
+            <div class="azzle-pricing-body">
+              <p>Ideal for handling complicated projects enterprise-level projects, and websites.</p>
+            </div>
+            <div class="azzle-pricing-footer mt-50">
+              <a class="azzle-default-btn d-block outline-btn" href="contact-us.html">Choose the plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end content -->
+
+  <section class="azzle-section-padding pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="azzle-default-content">
+            <h2>Freely ask us for more information</h2>
+            <p>Our AI SaaS solutions can be quickly deployed, enabling users start benefiting from AI capabilities without lengthy setup and development times in fast-paced industries.</p>
+            <div class="mt-50">
+              <a href="#" class="azzle-default-btn">Ask you questions</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="azzle-faq-wrap1">
+            <div class="azzle-faq-item open">
+              <div class="azzle-faq-header">
+                <h4>How do I start AI SaaS?</h4>
+                <div class="azzle-active-icon">
+                  <img src="assets/images/home1/+.svg" alt="plas">
+                </div>
+              </div>
+              <div class="azzle-faq-body">
+                <p>Go to the our official website and require users to create an account. You'll need to provide some basic information and agree to our terms and conditions.</p>
+              </div>
+            </div>
+            <div class="azzle-faq-item">
+              <div class="azzle-faq-header">
+                <h4>Can I customize AI SaaS solutions?</h4>
+                <div class="azzle-active-icon">
+                  <img src="assets/images/home1/+.svg" alt="plas">
+                </div>
+              </div>
+              <div class="azzle-faq-body">
+                <p>AI SaaS platforms offer customization options to adapt their services to your specific requirements. It's best to inquire with the provider about customization capabilities.</p>
+              </div>
+            </div>
+            <div class="azzle-faq-item">
+              <div class="azzle-faq-header">
+                <h4>How can AI benefit my business?</h4>
+                <div class="azzle-active-icon">
+                  <img src="assets/images/home1/+.svg" alt="plas">
+                </div>
+              </div>
+              <div class="azzle-faq-body">
+                <p>AI SaaS can enhance operational efficiency, automate tasks, improve decision-making with data insights, and also provide personalized customer experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end faq -->
+
+  <div class="azzle-section-padding2 bg-heading">
+    <div class="container">
+      <div class="azzle-section-title title2 center">
+        <h2>Positive feedback from our users</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>“This AI SaaS tool has revolutionized the way we process and analyze data. This is a game-changer for our business.”</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author1.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Max Weber</p>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>"It answers immediately, and we've seen a significant reduction in response time. Our customers love it and so do we!"</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author2.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Douglas Smith</p>
+                <span>Businessman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>"It is accurate, fast and supports multiple languages support. It is a must for any international business success."</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author3.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Abraham Maslo</p>
+                <span>Founder @ Marketing Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>"Security is a top concern for us, and AI SaaS takes it seriously. It's a reassuring layer of protection for our organization."</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author4.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Jack Fayol</p>
+                <span>HR Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>"We were concerned about integrating their APIs were well documented, and their support team was super cool."</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author5.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Karen Lynn</p>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="azzle-iconbox-wrap">
+            <div class="azzle-iconbox-rating">
+              <img src="assets/images/home1/start.svg" alt="ratting">
+            </div>
+            <div class="azzle-iconbox-content">
+              <p>"The return on investment has exceeded our expectations. it's an investment in the future of our business."</p>
+            </div>
+            <div class="azzle-iconbox-author-wrap">
+              <div class="azzle-iconbox-author-thumb">
+                <img src="assets/images/home1/author6.png" alt="thumb">
+              </div>
+              <div class="azzle-iconbox-author-data">
+                <p>Henry Ochi</p>
+                <span>Bank Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer  -->
+  <footer class="azzle-footer-section section">
+    <div class="container">
+      <div class="azzle-footer-top">
+        <img src="assets/images/home1/star.svg" alt="Icon">
+        <h1>Start building software</h1>
+      </div>
+      <div class="azzle-footer-one">
+        <div class="row">
+          <div class="col-xl-4 col-lg-12 col-md-12">
+            <div class="azzle-footer-textarea">
+              <a href="index.html">
+                <img src="assets/images/logo/logo-white.svg" alt="">
+              </a>
+              <p>Enhance your digital presence with azzle. We love to hear your ideas.</p>
+
+              <div class="azzle-footer-bottom-text">
+                <p>© All Rights Reserved by Mthemeus</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4">
+            <div class="azzle-footer-menu pl-80">
+              <h4>Menu</h4>
+              <ul>
+                <li>
+                  <a href="index.html">Home 01</a>
+                </li>
+                <li>
+                  <a href="index-02.html">Home 02</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a href="single-portfolio.html">Portfolio Details</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-4">
+            <div class="azzle-footer-menu pll-50">
+              <h4>Pages</h4>
+              <ul>
+                <li>
+                  <a href="service.html">Service</a>
+                </li>
+                <li>
+                  <a href="single-service.html">Service Details</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="single-blog.html">Blog Details</a>
+                </li>
+                <li>
+                  <a href="faq.html">FAQs</a>
+                </li>
+                <li>
+                  <a href="pricing.html">Pricing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4">
+            <div class="azzle-footer-menu mb-0 pl-150">
+              <h4>Utilities</h4>
+              <ul>
+                <li>
+                  <a href="#">Style Guide</a>
+                </li>
+                <li>
+                  <a href="#">Changelog</a>
+                </li>
+                <li>
+                  <a href="#">Licenses</a>
+                </li>
+                <li>
+                  <a href="career.html">Career</a>
+                </li>
+                <li>
+                  <a href="single-career.html"> Career Details</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/pricing.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
