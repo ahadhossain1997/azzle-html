@@ -2228,6 +2228,12 @@ header.hide-header {
 .azzle-video-content {
   max-width: 700px;
 }
+@media (max-width: 1399px) {
+  .azzle-video-content {
+    padding-left: 0 !important;
+    padding: 100px 50px 100px 50px !important;
+  }
+}
 .azzle-video-content h2 {
   color: var(--light-color);
   margin-bottom: 24px;
@@ -2312,19 +2318,59 @@ header.hide-header {
     opacity: 0;
   }
 }
+.azzle-iconbox-wraper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1199px) {
+  .azzle-iconbox-wraper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .azzle-iconbox-wraper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.azzle-iconbox-icon {
+  padding-bottom: 30px;
+}
+.azzle-iconbox-content h4 {
+  padding-bottom: 15px;
+}
 .azzle-iconbox-wrap {
   padding: 30px 20px;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  border: 2px solid var(--variable-color2);
+  border: 2px solid var(--heading-color);
+}
+@media (max-width: 1199px) {
+  .azzle-iconbox-wrap {
+    border-radius: 10px;
+  }
+}
+.azzle-iconbox-wrap.wrap1 {
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 1199px) {
+  .azzle-iconbox-wrap.wrap1 {
+    border-radius: 10px;
+  }
+}
+.azzle-iconbox-wrap.wrap2 {
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 1199px) {
+  .azzle-iconbox-wrap.wrap2 {
+    border-radius: 10px;
+  }
 }
 .azzle-iconbox-rating {
   padding-bottom: 30px;
 }
-.azzle-iconbox-content {
+.azzle-iconbox-content2 {
   padding-bottom: 30px;
 }
-.azzle-iconbox-content p {
+.azzle-iconbox-content2 p {
   font-size: 18px;
   line-height: 1.67em;
   color: var(--light-color);
@@ -2349,12 +2395,23 @@ header.hide-header {
   line-height: 1.43em;
   color: var(--light-color);
 }
+.azzle-iconbox-wrap2 {
+  padding: 30px 20px;
+  margin-bottom: 24px;
+  border: 2px solid var(--variable-color2);
+  border-radius: 10px;
+}
 
 .azzle-counter-wrap {
   display: flex;
   gap: 80px;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 1499px) {
+  .azzle-counter-wrap {
+    gap: 50px;
+  }
 }
 @media (max-width: 767px) {
   .azzle-counter-item:last-child {
@@ -2365,7 +2422,7 @@ header.hide-header {
   padding-top: 12px;
   font-weight: 600;
 }
-@media (max-width: 767px) {
+@media (max-width: 1499px) {
   .azzle-counter-item p {
     padding-top: 0;
   }
@@ -2380,7 +2437,7 @@ header.hide-header {
   margin: 0 !important;
   color: var(--accent-color) !important;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1599px) {
   .azzle-counter-data {
     font-size: 100px !important;
   }
