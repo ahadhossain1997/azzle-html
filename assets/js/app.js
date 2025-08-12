@@ -136,7 +136,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       }, {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1
         }
       }]
     });
@@ -247,6 +247,23 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       }
     }
   });
+
+  /*--------------------------------------------------------------
+   AZZLE CTA SLIDER JS INIT
+   --------------------------------------------------------------*/
+  var cta_slider = $('.azzle-cta-slider-init');
+  if (cta_slider.is_exist()) {
+    cta_slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 8000,
+      arrows: false,
+      pauseOnHover: false,
+      cssEase: 'linear'
+    });
+  }
   $(function () {}); /*End document ready*/
 
   $(window).on("resize", function () {}); // end window resize
