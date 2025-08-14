@@ -282,7 +282,23 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       speed: 2000,
       arrows: false,
       pauseOnHover: false,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [{
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        }
+      }]
     });
   }
 
@@ -300,7 +316,23 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       rtl: true,
       arrows: false,
       pauseOnHover: false,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [{
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        }
+      }]
     });
   }
 
