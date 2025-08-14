@@ -1,5 +1,9 @@
 "use strict";
 
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -254,7 +258,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   var cta_slider = $('.azzle-cta-slider-init');
   if (cta_slider.is_exist()) {
     cta_slider.slick({
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 0,
@@ -263,6 +267,54 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       pauseOnHover: false,
       cssEase: 'linear'
     });
+  }
+
+  /*--------------------------------------------------------------
+  AZZLE INTEGRATION SLIDER JS INIT
+  --------------------------------------------------------------*/
+  var int_slider = $('.azzle-int-slider-init');
+  if (int_slider.is_exist()) {
+    int_slider.slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 2000,
+      arrows: false,
+      pauseOnHover: false,
+      cssEase: 'linear'
+    });
+  }
+
+  /*--------------------------------------------------------------
+  AZZLE INTEGRATION SLIDER JS INIT
+  --------------------------------------------------------------*/
+  var int_slider = $('.azzle-int-slider-init2');
+  if (int_slider.is_exist()) {
+    int_slider.slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 2000,
+      rtl: true,
+      arrows: false,
+      pauseOnHover: false,
+      cssEase: 'linear'
+    });
+  }
+
+  /*--------------------------------------------------------------
+  AZZLE TESTIMONIAL SLIDER INIT
+  --------------------------------------------------------------*/
+  var T_slider = $('.azzle-t-slider-init');
+  if (T_slider.is_exist()) {
+    T_slider.slick(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: true
+    }, "slidesToScroll", 1), "infinite", true), "speed", 1500), "lazyLoad", 'progressive'), "prevArrow", '<button class="slide-arrow azzle-t-slider-next"></button>'), "nextArrow", '<button class="slide-arrow azzle-t-slider-prev"></button>'));
   }
   $(function () {}); /*End document ready*/
 
