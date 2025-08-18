@@ -26,6 +26,7 @@
 --light-color4: rgba(65, 65, 65, 1);
 --light-color5: rgba(246, 246, 235, 1);
 --light-color6: rgba(18, 18, 18, 1);
+--light-color7: rgba(237, 237, 224, 1);
 --border-color: rgba(127, 137, 149, 1);
 --variable-color1: rgba(234, 237, 240, 1);
 --variable-color2: rgba(25, 25, 25, 1);
@@ -1805,7 +1806,13 @@ img {
   vertical-align: middle;
   padding: 14px 24px;
   border-radius: 50px;
+  transition: all 0.4s;
   border: 1px solid var(--border-color);
+}
+.azzle-header-login-button ul li a:hover {
+  color: var(--light-color);
+  background-color: var(--accent-bg);
+  border: 1px solid transparent;
 }
 .azzle-header-login-button.button2 ul li a {
   color: var(--light-color) !important;
@@ -1817,6 +1824,18 @@ img {
   line-height: 1.5em;
 }
 .azzle-header-login-button.button3 ul li a {
+  color: var(--light-color);
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.azzle-header-login-button.button3 ul li a:hover {
+  background-color: var(--heading-bg);
+}
+.azzle-header-login-button.button4 ul li a {
   color: var(--heading-color);
   border: none;
   padding: 0;
@@ -1824,6 +1843,9 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5em;
+}
+.azzle-header-login-button.button4 ul li a:hover {
+  background-color: var(--light-color5);
 }
 
 .menu-left {
@@ -2577,7 +2599,7 @@ header.hide-header {
 .azzle-popup-video {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 42%;
   transform: translate(-50%, -50%);
 }
 
@@ -2721,14 +2743,27 @@ header.hide-header {
     opacity: 0;
   }
 }
+.azzle-iconbox-wrapper {
+  border-radius: 10px;
+  background-color: var(--heading-bg);
+}
+@media (max-width: 1199px) {
+  .azzle-iconbox-wrapper {
+    background-color: var(--light-color);
+  }
+}
 .azzle-iconbox-wraper {
   display: grid;
+  gap: 2px;
+  border-radius: 10px;
+  border: 2px solid var(--heading-color);
   grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 1199px) {
   .azzle-iconbox-wraper {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    border: none;
   }
 }
 @media (max-width: 767px) {
@@ -2749,15 +2784,15 @@ header.hide-header {
 .azzle-iconbox-wrap {
   padding: 30px 20px;
   transition: all 0.4s;
-  border: 2px solid var(--heading-color);
+  background-color: var(--light-color);
 }
 @media (max-width: 1199px) {
   .azzle-iconbox-wrap {
     border-radius: 10px;
+    border: 2px solid var(--heading-color);
   }
 }
 .azzle-iconbox-wrap:hover {
-  border: 2px solid transparent;
   background-color: var(--heading-color);
 }
 .azzle-iconbox-wrap:hover .azzle-iconbox-icon path {
@@ -2824,6 +2859,8 @@ header.hide-header {
   border-radius: 10px;
 }
 .azzle-iconbox-wrap3 {
+  display: flex;
+  gap: 24px;
   margin-bottom: 24px;
 }
 @media (max-width: 767px) {
@@ -2840,6 +2877,7 @@ header.hide-header {
   width: 80px;
   height: 80px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   border-radius: 100px;
   justify-content: center;
@@ -2915,18 +2953,15 @@ header.hide-header {
 .divider4 {
   padding-top: 130px;
   border-bottom: 1px solid var(--light-color5);
-  margin-bottom: 130px;
 }
 @media (max-width: 991px) {
   .divider4 {
     padding-top: 80px;
-    margin-bottom: 80px;
   }
 }
 @media (max-width: 767px) {
   .divider4 {
     padding-top: 0;
-    margin-bottom: 60px;
   }
 }
 
@@ -3843,6 +3878,7 @@ img.mynusicon {
 @media (max-width: 767px) {
   .azzle-hero-section {
     padding: 150px 0 80px;
+    border-radius: 0 0 30px 30px;
   }
 }
 @media (max-width: 575px) {
@@ -4530,6 +4566,20 @@ textarea {
   }
 }
 
+.pt-130 {
+  padding-top: 130px;
+}
+@media (max-width: 991px) {
+  .pt-130 {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .pt-130 {
+    padding-top: 60px;
+  }
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -4550,6 +4600,10 @@ textarea {
   background-repeat: no-repeat;
 }
 
+.bg-color {
+  background-color: var(--light-color7);
+}
+
 .azzle-default-btn,
 #azzle-submit-btn {
   font-size: 16px;
@@ -4563,10 +4617,16 @@ textarea {
   display: inline-flex;
   align-items: center;
   text-align: center;
-  white-space: nowrap;
   overflow: hidden;
   position: relative;
   transition: all 0.4s;
+  transform-style: preserve-3d;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  --arrow-hover-move-x: -110%;
   background-color: var(--heading-bg);
 }
 @media (max-width: 767px) {
@@ -4610,10 +4670,19 @@ textarea {
   border: 2px solid var(--heading-color);
   background-color: var(--light-color2);
 }
+.azzle-default-btn.outline-btn:hover,
+#azzle-submit-btn.outline-btn:hover {
+  border: 2px solid transparent;
+  background-color: var(--accent-bg);
+}
 .azzle-default-btn.outline-btn.btn2,
 #azzle-submit-btn.outline-btn.btn2 {
   color: var(--heading-color);
   background-color: var(--accent-color);
+}
+.azzle-default-btn.outline-btn.btn2:hover,
+#azzle-submit-btn.outline-btn.btn2:hover {
+  background-color: var(--light-color2);
 }
 .azzle-default-btn.outline-btn3,
 #azzle-submit-btn.outline-btn3 {
@@ -4631,6 +4700,148 @@ textarea {
 .azzle-default-btn:focus,
 #azzle-submit-btn:focus {
   box-shadow: none;
+}
+
+.azzle-default-btn::before,
+#azzle-submit-btn::before {
+  position: absolute;
+  content: "";
+  border-radius: inherit;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 102% 102%;
+  opacity: 0;
+}
+
+.azzle-default-btn .button-wraper,
+#azzle-submit-btn .button-wraper {
+  transition: opacity 0.2s, transform 0.2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.azzle-default-btn:hover .button-wraper,
+#azzle-submit-btn:hover .button-wraper {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.azzle-default-btn:hover::before,
+#azzle-submit-btn:hover::before {
+  opacity: 1;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.azzle-default-btn:hover::after,
+#azzle-submit-btn:hover::after {
+  transform: translate(0%, -50%);
+  opacity: 1;
+}
+
+.azzle-default-btn:after,
+#azzle-submit-btn:after {
+  content: attr(data-text);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  line-height: 12.5px;
+  transform: translate(0, 100%);
+  transition: opacity 0.2s, transform 0.2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  white-space: nowrap;
+}
+
+.azzle-default-btn svg {
+  transition: all 0.3s ease-out 0s;
+}
+
+.azzle-default-btn:hover svg path:nth-of-type(1), .azzle-default-btn:focus-visible svg path:nth-of-type(1) {
+  transform: translateX(calc(-1 * var(--arrow-hover-move-x)));
+  opacity: 0;
+  transition-delay: 0s, 0s;
+}
+
+.azzle-default-btn svg path:nth-of-type(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-default-btn svg path {
+  transition: transform 0.38s cubic-bezier(0.37, 0.08, 0.02, 0.93), opacity 0.18s ease-out;
+}
+
+.azzle-default-btn:hover svg path:nth-of-type(2), .azzle-default-btn:focus-visible svg path:nth-of-type(2) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-default-btn svg path:nth-of-type(2) {
+  transform: translateX(calc(1 * var(--arrow-hover-move-x)));
+  opacity: 0.5;
+  transition-delay: 0s, 0s;
+}
+
+.azzle-default-btn svg path:nth-of-type(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-default-btn svg path:nth-of-type(2) {
+  transform: translateX(calc(1 * var(--arrow-hover-move-x)));
+  opacity: 0.5;
+  transition-delay: 0s, 0s;
+}
+
+.azzle-blog-btn svg {
+  transition: all 0.3s ease-out 0s;
+}
+
+.azzle-blog-btn:hover svg path:nth-of-type(1), .azzle-blog-btn:focus-visible svg path:nth-of-type(1) {
+  transform: translateX(calc(-1 * var(--arrow-hover-move-x)));
+  opacity: 0;
+  transition-delay: 0s, 0s;
+}
+
+.azzle-blog-btn svg path:nth-of-type(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-blog-btn svg path {
+  transition: transform 0.38s cubic-bezier(0.37, 0.08, 0.02, 0.93), opacity 0.18s ease-out;
+}
+
+.azzle-blog-btn:hover svg path:nth-of-type(2), .azzle-blog-btn:focus-visible svg path:nth-of-type(2) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-blog-btn svg path:nth-of-type(2) {
+  transform: translateX(calc(1 * var(--arrow-hover-move-x)));
+  opacity: 0.5;
+  transition-delay: 0s, 0s;
+}
+
+.azzle-blog-btn svg path:nth-of-type(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.15s, 0.15s;
+}
+
+.azzle-blog-btn svg path:nth-of-type(2) {
+  transform: translateX(calc(1 * var(--arrow-hover-move-x)));
+  opacity: 0.5;
+  transition-delay: 0s, 0s;
 }
 
 .breadcrumb-wrapper {
@@ -4944,64 +5155,75 @@ a.azzle-default-btn.sm-size {
 }
 
 /*1.3 pages css*/
-.preloader {
+.pre-item {
   position: fixed;
   left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: var(--heading-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--heading-bg);
+  height: 100%;
+  width: 100%;
 }
 
-.preloader-inner {
-  display: block;
-  width: 45px;
-  height: 45px;
+.textWrapper {
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+.textWrapper p {
+  font-size: 80px;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em;
+  margin: 0;
 }
 
-.preloader-inner span {
-  box-sizing: border-box;
-  display: block;
+.invertbox {
   position: absolute;
-  width: 37px;
-  height: 37px;
-  margin: 4px;
-  border: 4px solid transparent;
-  border-radius: 50%;
-  animation: preloader 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #E1DCCC transparent transparent transparent;
+  height: 100%;
+  aspect-ratio: 1/1;
+  left: 0;
+  top: 0;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: invert(100%);
+  backdrop-filter: invert(100%);
+  animation: move 2s ease-in-out infinite;
 }
 
-.preloader-inner span:nth-child(1) {
-  animation-delay: -0.1s;
+@keyframes move {
+  50% {
+    left: calc(100% - 3rem);
+  }
+}
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
-.preloader-inner span:nth-child(2) {
-  animation-delay: -0.2s;
-}
-
-.preloader-inner span:nth-child(3) {
-  animation-delay: -0.3s;
-}
-
-@-webkit-keyframes preloader {
+@keyframes slideLeft {
   0% {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(100%);
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
-@keyframes preloader {
+@keyframes slideRight {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
+    transform: translateX(0%);
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
+    transform: translateX(100%);
   }
 }
 /*1.4 themes css*/

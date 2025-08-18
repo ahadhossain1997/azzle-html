@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/remixicon.css">
   <link rel="stylesheet" href="assets/css/clashdisplay.css">
@@ -34,12 +35,10 @@
 
 <body>
 
-  <div class="preloader">
-    <div class="preloader-inner">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+  <div id="preloader" class="pre-item d-flex align-items-center justify-content-center">
+    <div class="textWrapper">
+      <p class="text display-4 font-Oswald uppercase">AZZLE...</p>
+      <div class="invertbox"></div>
     </div>
   </div>
   <!-- End preloader -->
@@ -188,14 +187,16 @@
         </div>
         <div class="col-auto d-flex align-items-center">
           <div class="azzle-header-button-wraper">
-            <div class="azzle-header-login-button button3">
+            <div class="azzle-header-login-button button4">
               <ul>
                 <li>
                   <a href="sign-in.html">Login</a>
                 </li>
               </ul>
             </div>
-            <a class="azzle-default-btn azzle-header-btn btn2" href="contact-us.html">Sign up free</a>
+            <a class="azzle-default-btn azzle-header-btn btn2" href="contact-us.html" data-text="Sign up free">
+              <span class="button-wraper">Sign up free</span>
+            </a>
           </div>
           <div class="azzle-header-menu">
             <nav class="navbar site-navbar justify-content-between">
@@ -217,17 +218,17 @@
 
   <!-- End mobile menu -->
 
-  <div class="azzle-hero-section3">
+  <div class="azzle-hero-section3 section" style="background-image: url(assets/images/home3/hero-bg.png);">
     <div class="container">
       <div class="azzle-section-title">
         <div class="row">
           <div class="col-lg-7">
-            <div class="azzle-hero-content3">
+            <div class="azzle-hero-content3" data-aos="fade-up" data-aos-delay="500">
               <h1>AI the future of business</h1>
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="azzle-hero-content3">
+            <div class="azzle-hero-content3" data-aos="fade-up" data-aos-delay="700">
               <p>Businesses harnessing AI's power are better positioned to thrive in the modern age. It can drive decision-making skills.</p>
               <div class="mt-50">
                 <a href="#" class="azzle-default-btn outline-btn3">Explore About Us</a>
@@ -237,66 +238,64 @@
         </div>
       </div>
     </div>
-    <div class="azzle-hero-thumb3">
+    <div class="azzle-hero-thumb3" data-aos="fade-up" data-aos-delay="500">
       <img src="assets/images/home3/hero-thumb.png" alt="Thumb">
+    </div>
+    <div class="pt-130">
+      <div class="container">
+        <div class="azzle-section-title title3 center max-w-1000" data-aos="fade-up" data-aos-delay="500">
+          <h2>Way to be a game changer</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="azzle-iconbox-wrap4" data-aos="fade-up" data-aos-delay="500">
+              <div class="azzle-iconbox-icon4">
+                <img src="assets/images/home3/icon2.svg" alt="Icon">
+              </div>
+              <div class="azzle-iconbox-content4">
+                <h3>Enhanced Decision-Making</h3>
+                <p>AI can uncover valuable insights, for an identify trends, & predict outcomes. AI empowers data-driven decisions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="azzle-iconbox-wrap4" data-aos="fade-up" data-aos-delay="700">
+              <div class="azzle-iconbox-icon4">
+                <img src="assets/images/home3/icon1.svg" alt="Icon">
+              </div>
+              <div class="azzle-iconbox-content4">
+                <h3>Efficiency and Automation</h3>
+                <p>AI driven automation can be applied to the various processes leading to cost savings & improved productivity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="azzle-iconbox-wrap4 mb-0" data-aos="fade-up" data-aos-delay="900">
+              <div class="azzle-iconbox-icon4">
+                <img src="assets/images/home3/icon3.svg" alt="Icon">
+              </div>
+              <div class="azzle-iconbox-content4">
+                <h3>Customer Experiences</h3>
+                <p>It enables businesses to provide highly personalized and responsive innovative best customer experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end hero -->
 
-  <section class="azzle-section-padding4 pt-0">
-    <div class="container">
-      <div class="azzle-section-title title3 center max-w-1000">
-        <h2>Way to be a game changer</h2>
-      </div>
-      <div class="row">
-        <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap4">
-            <div class="azzle-iconbox-icon4">
-              <img src="assets/images/home3/icon2.svg" alt="Icon">
-            </div>
-            <div class="azzle-iconbox-content4">
-              <h3>Enhanced Decision-Making</h3>
-              <p>AI can uncover valuable insights, for an identify trends, & predict outcomes. AI empowers data-driven decisions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap4">
-            <div class="azzle-iconbox-icon4">
-              <img src="assets/images/home3/icon1.svg" alt="Icon">
-            </div>
-            <div class="azzle-iconbox-content4">
-              <h3>Efficiency and Automation</h3>
-              <p>AI driven automation can be applied to the various processes leading to cost savings & improved productivity.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap4 mb-0">
-            <div class="azzle-iconbox-icon4">
-              <img src="assets/images/home3/icon3.svg" alt="Icon">
-            </div>
-            <div class="azzle-iconbox-content4">
-              <h3>Customer Experiences</h3>
-              <p>It enables businesses to provide highly personalized and responsive innovative best customer experiences.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end service -->
-
-  <div class="azzle-section-padding">
+  <div class="azzle-section-padding bg-color">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <div class="azzle-content-thumb2">
+          <div class="azzle-content-thumb2" data-aos="zoom-in" data-aos-delay="500">
             <img src="assets/images/home3/thumb1.png" alt="Thumb">
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="azzle-default-content content5 pl-110">
+          <div class="azzle-default-content content5 pl-110" data-aos="fade-up" data-aos-delay="700">
             <h2>Revolutionary AI superchargers all business tasks</h2>
             <p>AI technologies and applications that significantly enhance and accelerate various business operations and tasks.</p>
             <p><span>AI-Powered Analytics:</span> Advanced AI analytics platforms can process and actions to improve decision-making.</p>
@@ -310,12 +309,12 @@
 
   <div class="azzle-section-padding2 bg-heading">
     <div class="container">
-      <div class="azzle-section-title title2 title3 center max-w-1000">
+      <div class="azzle-section-title title2 title3 center max-w-1000" data-aos="fade-up" data-aos-delay="500">
         <h2>Solutions for smart work</h2>
       </div>
       <div class="row">
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-iconbox-wrap5">
+          <div class="azzle-iconbox-wrap5" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-iconbox-icon5">
               <img src="assets/images/home3/icon4.svg" alt="icon">
             </div>
@@ -331,7 +330,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-iconbox-wrap5">
+          <div class="azzle-iconbox-wrap5" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-iconbox-icon5">
               <img src="assets/images/home3/icon5.svg" alt="icon">
             </div>
@@ -347,7 +346,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-iconbox-wrap5">
+          <div class="azzle-iconbox-wrap5" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-iconbox-icon5">
               <img src="assets/images/home3/icon6.svg" alt="icon">
             </div>
@@ -365,7 +364,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <div class="azzle-iconbox-wrap5">
+          <div class="azzle-iconbox-wrap5" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-iconbox-icon5">
               <img src="assets/images/home3/icon7.svg" alt="icon">
             </div>
@@ -381,7 +380,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
-          <div class="azzle-iconbox-wrap5">
+          <div class="azzle-iconbox-wrap5" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-iconbox-icon5">
               <img src="assets/images/home3/icon8.svg" alt="icon">
             </div>
@@ -401,16 +400,16 @@
   </div>
   <!-- end service -->
 
-  <div class="azzle-section-padding pb-0">
+  <div class="azzle-section-padding pb-0 bg-color">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 order-lg-2">
-          <div class="azzle-content-thumb2">
+          <div class="azzle-content-thumb2" data-aos="fade-left" data-aos-delay="500">
             <img src="assets/images/home3/thumb2.png" alt="Thumb">
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="azzle-default-content content5 pr-110">
+          <div class="azzle-default-content content5 pr-110" data-aos="fade-up" data-aos-delay="700">
             <h2>AI is reshaping all future-proofing work activities</h2>
             <p>AI is indeed reshaping & future-proofing work activities. AI is playing a crucial role in automating decision-making.</p>
             <p><span>Adaptive Workforces:</span> Adapt to changing market conditions by providing insights into workforce needs and skill gaps.</p>
@@ -422,17 +421,19 @@
   </div>
   <!-- end content -->
 
-  <div class="container">
-    <div class="divider4"></div>
-  </div>
-  <section class="azzle-section-padding2 pt-0">
+  <div class="bg-color">
     <div class="container">
-      <div class="azzle-section-title title3 center max-w-1000">
+      <div class="divider4"></div>
+    </div>
+  </div>
+  <section class="azzle-section-padding2 bg-color pt-130">
+    <div class="container">
+      <div class="azzle-section-title title3 center max-w-1000" data-aos="fade-up" data-aos-delay="500">
         <h2>Our professionals help you</h2>
       </div>
       <div class="row">
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-team-wrap">
+          <div class="azzle-team-wrap" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-team-thumb">
               <img src="assets/images/home3/thumb3.png" alt="Thumb">
             </div>
@@ -471,7 +472,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-team-wrap">
+          <div class="azzle-team-wrap" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-team-thumb">
               <img src="assets/images/home3/thumb4.png" alt="Thumb">
             </div>
@@ -510,7 +511,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6">
-          <div class="azzle-team-wrap">
+          <div class="azzle-team-wrap" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-team-thumb">
               <img src="assets/images/home3/thumb3.png" alt="Thumb">
             </div>
@@ -555,12 +556,12 @@
 
   <div class="azzle-section-padding accent-bg2">
     <div class="container">
-      <div class="azzle-section-title title3 title4 max-width-780">
+      <div class="azzle-section-title title3 title4 max-width-780" data-aos="fade-up" data-aos-delay="500">
         <h2>Our clients share their experiences</h2>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <div class="azzle-t-wrap2">
+          <div class="azzle-t-wrap2" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-t-rating">
               <img src="assets/images/home3/start.svg" alt="ratting">
             </div>
@@ -574,7 +575,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
-          <div class="azzle-t-wrap2 wrap3">
+          <div class="azzle-t-wrap2 wrap3" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-t-rating">
               <img src="assets/images/home3/start.svg" alt="ratting">
             </div>
@@ -592,14 +593,14 @@
   </div>
   <!-- end testimonial -->
 
-  <section class="azzle-section-padding2">
+  <section class="azzle-section-padding2 bg-color">
     <div class="container">
-      <div class="azzle-section-title title3 center max-w-1000">
+      <div class="azzle-section-title title3 center max-w-1000" data-aos="fade-up" data-aos-delay="500">
         <h2>Discover our latest articles</h2>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div class="azzle-blog-wrapper">
+          <div class="azzle-blog-wrapper" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-blog-thumb2">
               <a href="single-blog.html">
                 <img src="assets/images/blog/4.png" alt="thumb">
@@ -624,7 +625,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="azzle-blog-wrapper">
+          <div class="azzle-blog-wrapper" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-blog-thumb2">
               <a href="single-blog.html">
                 <img src="assets/images/blog/5.png" alt="thumb">
@@ -649,7 +650,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="azzle-blog-wrapper">
+          <div class="azzle-blog-wrapper" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-blog-thumb2">
               <a href="single-blog.html">
                 <img src="assets/images/blog/6.png" alt="thumb">
@@ -674,7 +675,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="azzle-blog-wrapper">
+          <div class="azzle-blog-wrapper" data-aos="fade-up" data-aos-delay="1100">
             <div class="azzle-blog-thumb2">
               <a href="single-blog.html">
                 <img src="assets/images/blog/7.png" alt="thumb">
@@ -710,12 +711,12 @@
       <div class="azzle-footer-top3">
         <div class="row">
           <div class="col-lg-6">
-            <div class="azzle-cta-title3">
+            <div class="azzle-cta-title3" data-aos="fade-up" data-aos-delay="500">
               <h1>Let’s talk</h1>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="azzle-cta-content3">
+            <div class="azzle-cta-content3" data-aos="fade-up" data-aos-delay="700">
               <p>Together, we'll create a tailored plan to ensure your success. We'll breathe life into your brand. We work hand in hand to bring your dreams to fruition."</p>
             </div>
           </div>
@@ -723,7 +724,7 @@
       </div>
       <div class="row">
         <div class="col-xl-4 col-lg-6">
-          <div class="azzle-cta-contact-info">
+          <div class="azzle-cta-contact-info" data-aos="fade-up" data-aos-delay="500">
             <ul>
               <li>
                 <a href="#">mthemeus@gmail.com</a>
@@ -732,7 +733,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6">
-          <div class="azzle-cta-contact-info">
+          <div class="azzle-cta-contact-info" data-aos="fade-up" data-aos-delay="700">
             <ul>
               <li>
                 <a href="tel:123">+088-3457-9210</a>
@@ -741,7 +742,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6">
-          <div class="azzle-cta-contact-info info2">
+          <div class="azzle-cta-contact-info info2" data-aos="fade-up" data-aos-delay="700">
             <ul>
               <li>
                 4140 Parker Rd. Mexico
@@ -758,6 +759,7 @@
                 <img src="assets/images/logo/logo-white.svg" alt="Logo">
               </a>
               <p>Our mission is to harness the power of AI to solve complex business challenges & decision-makers with data-driven insights, and enhance user experiences across digital platforms.</p>
+              <p>© Copyright 2024, All Rights Reserved by Mthemeus</p>
             </div>
           </div>
           <div class="col-xl-2 col-lg-4 col-md-4">
@@ -848,13 +850,12 @@
 
 
 
-
-
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/menu/menu.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/faq.js"></script>
+  <script src="assets/js/aos.js"></script>
   <script src="assets/js/pricing.min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/app.js"></script>

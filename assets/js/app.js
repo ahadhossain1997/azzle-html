@@ -355,15 +355,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   /*===========================================
       =    On Load Function      =
   =============================================*/
-  $(window).on("load", function () {
-    preloader();
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('#preloader').fadeOut('slow', function () {
+        $(this).remove();
+        AOS.init({
+          once: true
+        });
+      });
+    }, 1500);
   });
-
-  /*===========================================
-      =    Preloader      =
-  =============================================*/
-  function preloader() {
-    $('.preloader').delay(0).fadeOut();
-  }
-  ;
 })(jQuery);

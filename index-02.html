@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/remixicon.css">
   <link rel="stylesheet" href="assets/css/clashdisplay.css">
@@ -34,12 +35,10 @@
 
 <body>
 
-  <div class="preloader">
-    <div class="preloader-inner">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+  <div id="preloader" class="pre-item d-flex align-items-center justify-content-center">
+    <div class="textWrapper">
+      <p class="text display-4 font-Oswald uppercase">AZZLE...</p>
+      <div class="invertbox"></div>
     </div>
   </div>
   <!-- End preloader -->
@@ -173,14 +172,16 @@
         </div>
         <div class="col-auto d-flex align-items-center">
           <div class="azzle-header-button-wraper">
-            <div class="azzle-header-login-button button2 button3">
+            <div class="azzle-header-login-button button3">
               <ul>
                 <li>
                   <a href="sign-in.html">Login</a>
                 </li>
               </ul>
             </div>
-            <a class="azzle-default-btn azzle-header-btn btn2" href="contact-us.html">Sign up free</a>
+            <a class="azzle-default-btn azzle-header-btn btn2" href="contact-us.html" data-text="Sign up free">
+              <span class="button-wraper">Sign up free</span>
+            </a>
           </div>
           <div class="azzle-header-menu">
             <nav class="navbar site-navbar justify-content-between">
@@ -205,7 +206,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5 order-lg-2">
-          <div class="azzle-hero-thumb">
+          <div class="azzle-hero-thumb" data-aos="zoom-in" data-aos-delay="500">
             <img src="assets/images/home2/hero-thumb.png" alt="Thumb">
             <div class="azzle-hero-icon">
               <img src="assets/images/home2/hero-icon.svg" alt="icon">
@@ -214,12 +215,15 @@
         </div>
         <div class="col-lg-7">
           <div class="azzle-hero-content2">
-            <h1>Enhance your communication skills with AI</h1>
-            <p>Meet your customers on the most popular messaging channels with an AI chatbot. It understands the customer experience. Our AI chatbot benefits users by providing instant support, 24/7 availability, and efficient response to queries.</p>
-            <div class="mt-50">
-              <a href="#" class="azzle-default-btn btn2">
-                Start Chatting for Free
-                <img src="assets/images/home1/arrow-white.svg" alt="Arrow">
+            <h1 data-aos="fade-up" data-aos-delay="500">Enhance your communication skills with AI</h1>
+            <p data-aos="fade-up" data-aos-delay="700">Meet your customers on the most popular messaging channels with an AI chatbot. It understands the customer experience. Our AI chatbot benefits users by providing instant support, 24/7 availability, and efficient response to queries.</p>
+            <div class="mt-50" data-aos="fade-up" data-aos-delay="900">
+              <a class="azzle-default-btn btn2" href="contact-us.html" data-text="Start Chatting for Free">
+                <span class="button-wraper">Start Chatting for Free</span>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </a>
             </div>
           </div>
@@ -231,12 +235,12 @@
 
   <section class="azzle-section-padding4">
     <div class="container">
-      <div class="azzle-section-title font-title center max-w-800">
+      <div class="azzle-section-title font-title center max-w-800" data-aos="fade-up" data-aos-delay="500">
         <h2>Remarkable features in effective conversation</h2>
       </div>
       <div class="row">
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap3">
+          <div class="azzle-iconbox-wrap3" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-iconbox-icon3">
               <img src="assets/images/home2/icon1.svg" alt="Icon">
             </div>
@@ -247,7 +251,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap3">
+          <div class="azzle-iconbox-wrap3" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-iconbox-icon3">
               <img src="assets/images/home2/icon2.svg" alt="Icon">
             </div>
@@ -258,7 +262,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-iconbox-wrap3 mb-0">
+          <div class="azzle-iconbox-wrap3 mb-0" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-iconbox-icon3">
               <img src="assets/images/home2/icon3.svg" alt="Icon">
             </div>
@@ -279,7 +283,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <div class="azzle-content-thumb">
+          <div class="azzle-content-thumb" data-aos="zoom-in" data-aos-delay="500">
             <img src="assets/images/home2/thumb1.png" alt="Thumb">
             <div class="azzle-content-thumb-bg">
               <img src="assets/images/home2/shape2.png" alt="shape">
@@ -287,7 +291,7 @@
           </div>
         </div>
         <div class="col-lg-7 d-flex align-items-center">
-          <div class="azzle-default-content content3 pl-110">
+          <div class="azzle-default-content content3 pl-110" data-aos="fade-up" data-aos-delay="700">
             <h2>Expression of like human attitude</h2>
             <p class="mb-0">Our AI chatbots excel at understanding natural language and generating human-like responses. Adapting your conversational style to our chatbot can improve the quality of your interactions.</p>
             <div class="azzle-listicon-wrap2 mt-50">
@@ -314,7 +318,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5 order-lg-2">
-          <div class="azzle-content-thumb">
+          <div class="azzle-content-thumb" data-aos="fade-up" data-aos-delay="500">
             <img src="assets/images/home2/thumb3.png" alt="Thumb">
             <div class="azzle-content-thumb-bg">
               <img src="assets/images/home2/shape3.png" alt="shape">
@@ -322,7 +326,7 @@
           </div>
         </div>
         <div class="col-lg-7 d-flex align-items-center">
-          <div class="azzle-default-content content3 pr-110">
+          <div class="azzle-default-content content3 pr-110" data-aos="fade-up" data-aos-delay="700">
             <h2>Faster means of communication</h2>
             <p class="mb-0">This AI chatbot can handle repetitive tasks and also quickly answer frequently asked questions, businesses to save time and resources.</p>
             <div class="azzle-listicon-wrap2 mt-50">
@@ -349,7 +353,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <div class="azzle-content-thumb">
+          <div class="azzle-content-thumb" data-aos="fade-left" data-aos-delay="500">
             <img src="assets/images/home2/thumb2.png" alt="Thumb">
             <div class="azzle-content-thumb-bg">
               <img src="assets/images/home2/shape3.png" alt="shape">
@@ -357,14 +361,17 @@
           </div>
         </div>
         <div class="col-lg-7 d-flex align-items-center">
-          <div class="azzle-default-content content3 pl-110">
+          <div class="azzle-default-content content3 pl-110" data-aos="fade-up" data-aos-delay="700">
             <h2>Always provide the best answer</h2>
             <p> AI chatbots are designed to give accurate & relevant answers to the best of their abilities based on the information they are trained and algorithms to ensure high-quality responses.</p>
             <p>Our chatbot responses is influenced by the quality and well-trained chatbots are more likely to provide better answers.</p>
-            <div class="mt-50">
-              <a href="#" class="azzle-default-btn btn3">
-                Try It Now
-                <img src="assets/images/home1/arrow-white.svg" alt="Arrow">
+            <div class="mt-50" data-aos="fade-up" data-aos-delay="900">
+              <a class="azzle-default-btn btn3" href="contact-us.html" data-text="Try It Now">
+                <span class="button-wraper">Try It Now</span>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </a>
             </div>
           </div>
@@ -378,7 +385,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-5 order-lg-2">
-          <div class="azzle-int-slider-wraper">
+          <div class="azzle-int-slider-wraper" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-int-slider-init">
               <div class="azzle-int-slider-item">
                 <img src="assets/images/home2/2.svg" alt="Icon">
@@ -446,7 +453,7 @@
           </div>
         </div>
         <div class="col-lg-7 d-flex align-items-center">
-          <div class="azzle-default-content content2 content3 pr-110">
+          <div class="azzle-default-content content2 content3 pr-110" data-aos="fade-up" data-aos-delay="500">
             <h2>Integrates your favorite channels</h2>
             <p>The ability to integrate AI chatbots into multiple channels enables businesses to meet users where they are, providing a consistent and convenient experience across various touchpoints. </p>
             <div class="azzle-listicon-wrap2 mt-50">
@@ -479,10 +486,10 @@
       </div>
       <div class="azzle-t-slider-init">
         <div class="azzle-t-wrap">
-          <div class="azzle-t-thumb">
+          <div class="azzle-t-thumb" data-aos="zoom-in" data-aos-delay="500">
             <img src="assets/images/home2/t-thumb1.png" alt="Thumb">
           </div>
-          <div class="azzle-default-content content4">
+          <div class="azzle-default-content content4" data-aos="fade-up" data-aos-delay="700">
             <h3>“Easy to use AI Chatbot with many options”</h3>
             <p>I have been using AI chatbots for several chatbots for the past year. I learned quickly and exploring the tool, & asking questions to Slack support. The tool is very easy user-friendly and the support group helps quickly and thoroughly. Keep up the good work!</p>
             <div class="mt-50">
@@ -534,12 +541,12 @@
 
   <section class="azzle-section-padding2 pt-0">
     <div class="container">
-      <div class="azzle-section-title font-title max-w-650">
+      <div class="azzle-section-title font-title max-w-650" data-aos="fade-right" data-aos-delay="500">
         <h2>Find out more in our recent blogs</h2>
       </div>
       <div class="row">
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-blog-wrap">
+          <div class="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="500">
             <div class="azzle-blog-thumb">
               <img src="assets/images/blog/1.png" alt="thumb">
             </div>
@@ -565,7 +572,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-blog-wrap">
+          <div class="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="700">
             <div class="azzle-blog-thumb">
               <img src="assets/images/blog/2.png" alt="thumb">
             </div>
@@ -591,7 +598,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <div class="azzle-blog-wrap">
+          <div class="azzle-blog-wrap" data-aos="fade-up" data-aos-delay="900">
             <div class="azzle-blog-thumb">
               <img src="assets/images/blog/1.png" alt="thumb">
             </div>
@@ -625,11 +632,11 @@
 
   <div class="azzle-section-padding pt-0">
     <div class="container">
-      <div class="azzle-section-title font-title center max-width-750">
+      <div class="azzle-section-title font-title center max-width-750" data-aos="fade-up" data-aos-delay="500">
         <h2>AI Chatbot FAQs for more information</h2>
       </div>
       <div class="azzle-faq-wrap1 wrap2">
-        <div class="azzle-faq-item item2 open">
+        <div class="azzle-faq-item item2 open" data-aos="fade-up" data-aos-delay="700">
           <div class="azzle-faq-header header2">
             <h3>How does an AI chatbot work?</h3>
             <div class="azzle-active-icon">
@@ -641,7 +648,7 @@
             <p>AI chatbots work by analyzing user input, understanding the intent behind the message, and providing relevant responses based on pre-defined rules or machine learning models. They can learn from user interactions to improve over time.</p>
           </div>
         </div>
-        <div class="azzle-faq-item item2">
+        <div class="azzle-faq-item item2" data-aos="fade-up" data-aos-delay="900">
           <div class="azzle-faq-header header2">
             <h3>What are the benefits of using AI chatbots?</h3>
             <div class="azzle-active-icon">
@@ -653,7 +660,7 @@
             <p>AI chatbots offer 24/7 availability, cost savings, efficiency, consistency, instant responses, scalability, and the ability to handle repetitive tasks. They can enhance user experiences and streamline operations in businesses.</p>
           </div>
         </div>
-        <div class="azzle-faq-item item2">
+        <div class="azzle-faq-item item2" data-aos="fade-up" data-aos-delay="1100">
           <div class="azzle-faq-header header2">
             <h3>Can AI chatbots understand multiple languages?</h3>
             <div class="azzle-active-icon">
@@ -665,7 +672,7 @@
             <p>Yes, many AI chatbots are designed to understand and communicate in multiple languages, making them accessible to a global audience.</p>
           </div>
         </div>
-        <div class="azzle-faq-item item2">
+        <div class="azzle-faq-item item2" data-aos="fade-up" data-aos-delay="1300">
           <div class="azzle-faq-header header2">
             <h3>Can AI chatbots provide personalized responses?</h3>
             <div class="azzle-active-icon">
@@ -677,7 +684,7 @@
             <p>Advanced AI chatbots can provide personalized responses by using data from past interactions to tailor their answers to individual user preferences and needs.</p>
           </div>
         </div>
-        <div class="azzle-faq-item item2">
+        <div class="azzle-faq-item item2" data-aos="fade-up" data-aos-delay="1500">
           <div class="azzle-faq-header header2">
             <h3>How can I integrate an AI chatbot into my business or website?</h3>
             <div class="azzle-active-icon">
@@ -699,12 +706,16 @@
     <div class="azzle-footer-top">
       <div class="azzle-cta-section2">
         <div class="container">
-          <div class="azzle-section-title title2 font-title center max-width-780 pb-0">
+          <div class="azzle-section-title title2 font-title center max-width-780 pb-0" data-aos="fade-up" data-aos-delay="500">
             <h2>Let's get started and enjoy the power of AI</h2>
             <div class="azzle-main-field2 mt-50">
               <input type="email" placeholder="Enter your email">
-              <button class="sub-btn2 azzle-default-btn btn4" type="submit">Get Started
-                <img src="assets/images/home1/arrow-white.svg" alt="Icon">
+              <button class="sub-btn2 azzle-default-btn btn4" type="submit" data-text="Get Started">
+                <span class="button-wraper">Get Started</span>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.2139 1.5L17.7139 8M17.7139 8L11.2139 14.5M17.7139 8L0.999581 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
             </div>
           </div>
@@ -831,13 +842,12 @@
 
 
 
-
-
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/menu/menu.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/faq.js"></script>
+  <script src="assets/js/aos.js"></script>
   <script src="assets/js/pricing.min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/app.js"></script>
